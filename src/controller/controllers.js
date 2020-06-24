@@ -1,4 +1,3 @@
-
 const User = require('../models/User');
 const passport = require('passport');
 const bcrypt = require('bcryptjs');
@@ -6,22 +5,17 @@ const {sendWelcomeMail,sendGoodbyMail} = require('../emails/account');
 
 const userControll = {
     signup: async( req, res ) => {
-        const { name, email, mobile, password, password2 } = req.body;
+        const { name, email, mobile, password } = req.body;
         let errors = [];
       
-        if (password != password2) {
-          errors.push({ msg: 'Passwords do not match' });
-        }
-      
-        if (errors.length > 0) {
-          res.render('signup', { errors, name, email, mobile, password, password2 });
-        } else {
+        // if (password != password2) {
+        //   errors.push({ msg: 'Passwords do not match' });
+        // }
           const user = await User.findOne({ email: email })
-
           try {
             if (user) {
               errors.push({ msg: 'Email already exists' });
-              res.render('signup', { errors, name, email, mobile, password,password2 });
+              res.render('signup', { errors, name, email, mobile, password });
 
             } else {
               const user = new User({ name, email, mobile, password })
@@ -32,8 +26,7 @@ const userControll = {
             }
           } catch(e) {
             res.status(400).send(e)
-          }
-        }  
+          } 
     },
     login: async(req,res,next) => {
         try {
@@ -45,7 +38,6 @@ const userControll = {
         } catch (e) {
             res.status(400).send(e)
         }
-       
     },
     readImage: async(req,res) => {
       try{
@@ -67,7 +59,6 @@ const userControll = {
         } catch (e) {
             res.status(400).send(e)
         }
-        
     },
     update: async(req,res) => {
         const updates = Object.keys(req.body)
@@ -104,5 +95,4 @@ const userControll = {
       res.redirect('/users/read')
     }
 }
-
 module.exports = userControll
