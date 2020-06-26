@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 //Db connection
 
-mongoose.connect(`mongodb+srv://taskapp:`+ encodeURIComponent('said@2460') + `@cluster0-zznnv.mongodb.net/attainu-chat?retryWrites=true`, {
+mongoose.connect(`mongodb+srv://pijush:`+ encodeURIComponent('firewall') + `@cluster0-vrwws.mongodb.net/attainu-chat?retryWrites=true`, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
