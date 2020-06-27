@@ -2,20 +2,7 @@ const mongoose = require('mongoose')
 
 //Db connection
 
-mongoose.connect(`mongodb+srv://pijush:`+ encodeURIComponent('firewall') + `@cluster0-vrwws.mongodb.net/attainu-chat?retryWrites=true`, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-})
-.then(() => console.log('MongoDB Connected'))
-.catch(err => console.log(err));
-
-
-
-//connect local
-
-// mongoose.connect('mongodb://localhost:27017/chat2', {
+// mongoose.connect(`mongodb+srv://${process.env.NAME}`+ encodeURIComponent(process.env.PASSWORD) + `${process.env.CLUSTER}.mongodb.net/attainu-chat?retryWrites=true`, {
 //     useNewUrlParser: true,
 //     useCreateIndex: true,
 //     useUnifiedTopology: true,
@@ -23,3 +10,15 @@ mongoose.connect(`mongodb+srv://pijush:`+ encodeURIComponent('firewall') + `@clu
 // })
 // .then(() => console.log('MongoDB Connected'))
 // .catch(err => console.log(err));
+
+
+//connect local
+
+mongoose.connect(process.env.MONGODB_URL, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+})
+.then(() => console.log('MongoDB Connected'))
+.catch(err => console.log(err));
