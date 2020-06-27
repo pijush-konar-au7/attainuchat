@@ -4,7 +4,7 @@ const sharp = require('sharp')
 const router = express.Router();
 const userController = require('../controller/controllers')
 const { forwardAuthenticated ,ensureAuthenticated} = require('../middleware/auth');
-const { authenticate } = require('passport');
+// const { authenticate } = require('passport');
 
 // Signup Page
 router.get('/signup', forwardAuthenticated, (req, res) => res.render('signup'));

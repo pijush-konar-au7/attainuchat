@@ -1,7 +1,7 @@
 
 const User = require('../models/User');
 const passport = require('passport');
-const bcrypt = require('bcryptjs');
+// const bcrypt = require('bcryptjs');
 const {sendWelcomeMail,sendGoodbyMail} = require('../emails/account');
 
 const userControll = {
