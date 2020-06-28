@@ -1,4 +1,4 @@
-# Robin - Chat App ![GitHub Logo](/public/images/Icon/logo.png) ![](/public/images/Icon/logo2.png)
+# Robin - Chat App ![Icon](/public/images/Icon/logo.png =10x10)
 
 The objective of this website/project is to provide a platform to all who can just visit and log in to our website 
 and they can create their own chat room where they can talk to their friend anywhere from the world, share their location. 
