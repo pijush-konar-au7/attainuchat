@@ -1,14 +1,16 @@
-# Robin - Chat App
+# Robin - Chat App ![GitHub Logo](/public/images/Icon/logo.png) ![](/public/images/Icon/logo2.png)
 
 The objective of this website/project is to provide a platform to all who can just visit and log in to our website 
-and they can create their own chat room where they can talk to their friend anywhere from the world, share their location 
-(*and pictures, videos, documents - To Be Added Later!)
+and they can create their own chat room where they can talk to their friend anywhere from the world, share their location. 
+We have user specified Dashboard where the user can check their account details, update their details, set/upload their own 
+Profile picture, they can also remove their profile picture and delete their account. We have additional feature of 
+listing music from Spotify.
 
 ---
 
 # Project Authors
 
-Check Us Out
+#### Check Us Out
 
 👤 **Pijush Konar**
 
@@ -22,7 +24,7 @@ Check Us Out
 
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js and a node global package installed in your environement.
 
 ---
 
@@ -67,7 +69,7 @@ If the installation was successful, you should be able to run the following comm
 Open `robin-chat-app-two\config` then create and dev.env file and edit it with your infos. You will need:
 
 - PORT=`Your Desired Port`
-- MONGODB_URL=`Your Database Address`:
+- MONGODB_URL=`Your Database Address`
 - SENDGRID_API_KEY=`Enter Your SendGrid Email API Register On Sendgrid`
 ---
 
