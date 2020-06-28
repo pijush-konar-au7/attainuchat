@@ -133,37 +133,37 @@ Open `robin-chat-app-two\config` then create and dev.env file and edit it with y
 
 ## Project Screenshots
 
-- Welcome Page/Default Page
+- ###### Welcome Page/Default Page
  ![](/Demo-Pictures/1-welcome.jpg) 
 
-Signup Page
+- ###### Signup Page
  ![](/Demo-Pictures/2-signup.jpg) 
 
-Login Page
+- ###### Login Page
  ![](/Demo-Pictures/3-login.jpg) 
 
-Main Page/Dashboard
+- ###### Main Page/Dashboard
  ![](/Demo-Pictures/4-dashboard.jpg) 
 
-Account Details Page
+- ###### Account Details Page
  ![](/Demo-Pictures/5-account.jpg) 
  
-Account Details Update Page
+- ###### Account Details Update Page
  ![](/Demo-Pictures/6-update.jpg) 
  
-Profile Picture Upload Page
+- ###### Profile Picture Upload Page
  ![](/Demo-Pictures/7-upload.jpg) 
 
-Account Delete Page
+- ###### Account Delete Page
  ![](/Demo-Pictures/8-delete.jpg) 
  
-Chat Room Create Page
+- ###### Chat Room Create Page
  ![](/Demo-Pictures/9-chatroom.jpg) 
 
-Chat Room Page
+- ###### Chat Room Page
  ![](/Demo-Pictures/10-chat.jpg) 
  
-Listen Music Feature
+- ###### Listen Music Feature
  ![](/Demo-Pictures/11-music.jpg)  
  
  
