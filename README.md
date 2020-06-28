@@ -133,7 +133,7 @@ Open `robin-chat-app-two\config` then create and dev.env file and edit it with y
 
 ## Project Screenshots
 
-Welcome Page/Default Page
+- Welcome Page/Default Page
  ![](/Demo-Pictures/1-welcome.jpg) 
 
 Signup Page
