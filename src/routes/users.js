@@ -2,6 +2,7 @@ const express = require('express');
 const multer = require('multer')
 const sharp = require('sharp')
 const router = express.Router();
+const path = require('path')
 const userController = require('../controller/controllers')
 const { forwardAuthenticated ,ensureAuthenticated} = require('../middleware/auth');
 
@@ -19,13 +20,13 @@ router.post('/login', userController.login);
 
 //Chat
 
-router.get('/chat', (req,res) => res.render('start') )
+router.get('/chat', (req,res) => res.render('start'))
 
 // Image
 router.get('/image', userController.readImage);
 
 //Read
-router.get('/read',ensureAuthenticated,(req,res) => res.render('read',{user:req.user}))
+router.get('/read',ensureAuthenticated,(req,res) => res.render('read', {user:req.user}))
 
 // Logout
 router.get('/logout', userController.logout);
@@ -34,7 +35,7 @@ router.get('/logout', userController.logout);
 router.get('/delete', userController.delete)
 
 //Delete Confirmation
-router.get('/deleteconf', (req,res)=> res.render('deleteconf',{user:req.user}))
+router.get('/deleteconf', (req,res)=> res.render('deleteconf', {user:req.user}))
 
 //Update
 router.get('/update', (req, res) => res.render('update',{user:req.user}));
